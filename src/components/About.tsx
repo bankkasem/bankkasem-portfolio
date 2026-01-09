@@ -1,9 +1,10 @@
 const stats = [
-  { number: "3+", label: "Years Experience" },
-  { number: "50+", label: "Projects Completed" },
-  { number: "30+", label: "Happy Clients" },
-  { number: "100%", label: "Client Satisfaction" },
+  { number: "7+", label: "Years Experience" },
+  // { number: "10+", label: "Projects Completed" },
 ];
+
+const githubUrl = process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com";
+const email = process.env.NEXT_PUBLIC_EMAIL || "contact@example.com";
 
 export default function About() {
   return (
@@ -41,12 +42,12 @@ export default function About() {
 
                 <div className="flex justify-center gap-4">
                   <a
-                    href="https://github.com"
+                    href={githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full bg-foreground/5 hover:bg-accent hover:text-white flex items-center justify-center transition-all"
-                    aria-label="GitHub"
                   >
+                    <span className="sr-only">GitHub</span>
                     <svg
                       className="w-5 h-5"
                       fill="currentColor"
@@ -57,26 +58,10 @@ export default function About() {
                     </svg>
                   </a>
                   <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={`mailto:${email}`}
                     className="w-10 h-10 rounded-full bg-foreground/5 hover:bg-accent hover:text-white flex items-center justify-center transition-all"
-                    aria-label="LinkedIn"
                   >
-                    <svg
-                      className="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                  </a>
-                  <a
-                    href="mailto:contact@example.com"
-                    className="w-10 h-10 rounded-full bg-foreground/5 hover:bg-accent hover:text-white flex items-center justify-center transition-all"
-                    aria-label="Email"
-                  >
+                    <span className="sr-only">Email</span>
                     <svg
                       className="w-5 h-5"
                       fill="none"
@@ -115,11 +100,6 @@ export default function About() {
                 modern web applications to complex enterprise solutions. I
                 believe in writing clean, maintainable code and staying
                 up-to-date with the latest technologies.
-              </p>
-              <p>
-                When I'm not coding, you can find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
               </p>
             </div>
 
