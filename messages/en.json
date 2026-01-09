@@ -1,0 +1,107 @@
+{
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "hireMe": "Hire Me"
+  },
+  "Hero": {
+    "available": "Available for freelance work",
+    "greeting": "Hi, I'm",
+    "name": "Kasemsarn",
+    "rolePrefix": "Full-Stack Developer crafting",
+    "beautiful": "beautiful",
+    "and": "and",
+    "scalable": "scalable",
+    "roleSuffix": "web applications",
+    "description": "Passionate about building modern solutions with cutting-edge technologies. Let's turn your ideas into reality.",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch",
+    "scrollDown": "Scroll down"
+  },
+  "About": {
+    "badge": "About Me",
+    "title": "Get to know me better",
+    "subtitle": "A passionate developer who loves creating amazing digital experiences",
+    "name": "Kasemsarn Purisarn",
+    "role": "Full-Stack Developer",
+    "heading": "Turning ideas into",
+    "headingHighlight": "digital reality",
+    "bio1": "I'm a Full-Stack Developer with a passion for building exceptional digital experiences. With expertise in both frontend and backend technologies, I create seamless, scalable applications that make a difference.",
+    "bio2": "My journey in tech has led me to work on diverse projects, from modern web applications to complex enterprise solutions. I believe in writing clean, maintainable code and staying up-to-date with the latest technologies.",
+    "yearsExperience": "Years Experience",
+    "projectsCompleted": "Projects Completed"
+  },
+  "Skills": {
+    "badge": "My Skills",
+    "title": "Technologies I work with",
+    "subtitle": "A collection of tools and technologies I use to bring ideas to life",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps & Tools",
+    "alwaysLearning": "Always learning and exploring new technologies to deliver the best solutions",
+    "currentlyExploring": "Currently exploring: AI/ML Integration",
+    "favoriteStack": "Favorite stack: Next.js + TypeScript"
+  },
+  "Projects": {
+    "badge": "My Work",
+    "title": "Featured Projects",
+    "subtitle": "A selection of projects I've worked on, showcasing my skills and expertise",
+    "viewLive": "View live project",
+    "viewSource": "View source code",
+    "viewAll": "View All Projects",
+    "featured": "Featured",
+    "items": {
+      "companyHome": {
+        "title": "Company Home Page",
+        "description": "Official corporate website featuring a modern design, service showcases, and seamless user experience."
+      },
+      "ecommerce": {
+        "title": "E-Commerce Platform",
+        "description": "A full-featured e-commerce solution with cart management, payment processing, and real-time inventory tracking."
+      },
+      "authSystem": {
+        "title": "Token-Based Auth System",
+        "description": "A secure authentication system featuring JWT-based authorization, session management, and role-based access control."
+      },
+      "carDealer": {
+        "title": "Car Dealer Support System",
+        "description": "A comprehensive car stock management and booking system"
+      }
+    }
+  },
+  "Contact": {
+    "badge": "Contact",
+    "title": "Let's work together",
+    "subtitle": "Have a project in mind? Let's discuss how we can bring your ideas to life",
+    "getInTouch": "Get in touch",
+    "openToDiscuss": "I'm always open to discussing new projects, creative ideas, or opportunities.",
+    "emailLabel": "Email",
+    "locationLabel": "Location",
+    "locationValue": "Bangkok, Thailand",
+    "followMe": "Follow me",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "John Doe",
+      "email": "Your Email",
+      "emailPlaceholder": "john@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "",
+      "message": "Message",
+      "messagePlaceholder": "",
+      "submit": "Send Email"
+    }
+  },
+  "Footer": {
+    "role": "Full-Stack Developer crafting beautiful and scalable web applications.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "locationValue": "Bangkok, Thailand",
+    "copyright": "© {year} Kasemsarn Purisarn. All rights reserved."
+  }
+}
