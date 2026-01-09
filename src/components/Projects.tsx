@@ -1,45 +1,41 @@
 const githubUrl = process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com";
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+  featured?: boolean;
+}
+
+const projects: Project[] = [
+  {
+    title: "Company Home Page",
+    description:
+      "Official corporate website featuring a modern design, service showcases, and seamless user experience.",
+    tags: ["Next.js", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://weplus.life",
+    featured: true,
+  },
   {
     title: "E-Commerce Platform",
     description:
       "A full-featured e-commerce solution with cart management, payment processing, and real-time inventory tracking.",
-    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-    image: "/projects/ecommerce.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
+    tags: ["Next.js", "TypeScript", "Saleor"],
+    liveUrl: "https://shop.weplus.life",
     featured: true,
   },
   {
-    title: "Task Management App",
+    title: "Token-Based Auth System",
     description:
-      "Collaborative task management tool with real-time updates, team workspaces, and progress tracking.",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-    image: "/projects/taskapp.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: true,
+      "A secure authentication system featuring JWT-based authorization, session management, and role-based access control.",
+    tags: ["Node.js", "JWT", "Redis"],
   },
   {
-    title: "Analytics Dashboard",
-    description:
-      "Interactive analytics dashboard with data visualization, custom reports, and real-time metrics.",
-    tags: ["Vue.js", "D3.js", "Python", "FastAPI"],
-    image: "/projects/dashboard.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-  },
-  {
-    title: "Social Media App",
-    description:
-      "Mobile-first social platform with real-time messaging, media sharing, and content recommendations.",
-    tags: ["React Native", "GraphQL", "AWS", "Redis"],
-    image: "/projects/social.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
+    title: "Car Dealer Support System",
+    description: "A comprehensive car stock management and booking system",
+    tags: ["React.js", "Express.js"],
   },
 ];
 
