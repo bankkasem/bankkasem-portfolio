@@ -20,6 +20,11 @@
       "recommended": true,
       "suspicious": {
         "noUnknownAtRules": "off"
+      },
+      "a11y": {
+        "useAnchorContent": "warn",
+        "useValidAnchor": "warn",
+        "noSvgWithoutTitle": "off"
       }
     },
     "domains": {
