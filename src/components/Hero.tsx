@@ -91,21 +91,22 @@ export default function Hero() {
             Get In Touch
           </a>
         </div>
+      </div>
 
-        <div
-          className="animate-fade-in-up absolute bottom-10 left-1/2 -translate-x-1/2"
-          style={{ animationDelay: "0.5s" }}
+      {/* Scroll indicator - positioned outside content container */}
+      <div
+        className="animate-fade-in-up absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
+        style={{ animationDelay: "0.5s" }}
+      >
+        <a
+          href="#about"
+          className="flex flex-col items-center text-white/60 hover:text-white transition-colors"
         >
-          <a
-            href="#about"
-            className="flex flex-col items-center text-white/60 hover:text-white transition-colors"
-          >
-            <span className="text-sm mb-2">Scroll down</span>
-            <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-2">
-              <div className="w-1.5 h-3 bg-white/60 rounded-full animate-bounce" />
-            </div>
-          </a>
-        </div>
+          <span className="text-sm mb-2">Scroll down</span>
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-2">
+            <div className="w-1.5 h-3 bg-white/60 rounded-full animate-bounce" />
+          </div>
+        </a>
       </div>
     </section>
   );
