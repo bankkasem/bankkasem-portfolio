@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bankkasem - Portfolio
 
-## Getting Started
+A portfolio website built with Next.js 16, TypeScript, and Tailwind CSS 4.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=flat-square&logo=tailwind-css)
+![Bun](https://img.shields.io/badge/Bun-Package_Manager-f9f1e1?style=flat-square&logo=bun)
+
+## ✨ Features
+
+- **Professional Design** - Navy blue theme with glassmorphism effects
+- **Responsive** - Works on all devices
+- **Smooth Animations** - Fade-in, hover effects, and transitions
+- **SEO Optimized** - Proper meta tags and semantic HTML
+- **Accessible** - ARIA labels and keyboard navigation
+
+## 🚀 Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Framework | Next.js 16 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS 4 |
+| Package Manager | Bun |
+| Linting | Biome |
+
+## 📦 Getting Started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install dependencies
+bun install
+
+# Run development server
+bun run dev
+
+# Build for production
+bun run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the portfolio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── globals.css    # Design system & animations
+│   ├── layout.tsx     # Root layout + SEO
+│   └── page.tsx       # Main page
+└── components/
+    ├── Header.tsx     # Navigation
+    ├── Hero.tsx       # Hero section
+    ├── About.tsx      # About + stats
+    ├── Skills.tsx     # Tech skills
+    ├── Projects.tsx   # Portfolio
+    ├── Contact.tsx    # Contact form
+    └── Footer.tsx     # Footer
+```
 
-## Learn More
+## 🤖 Built with AI
 
-To learn more about Next.js, take a look at the following resources:
+This project was developed in collaboration with **AI** (Antigravity by Google DeepMind), demonstrating the power of human-AI pair programming for rapid development of modern web applications.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made with ❤️ by [@bankkasem](https://github.com/bankkasem)
