@@ -6,6 +6,9 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 
+const isAvailableForHire =
+  process.env.NEXT_PUBLIC_AVAILABLE_FOR_HIRE === "true";
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -14,7 +17,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
-      <Contact />
+      {isAvailableForHire && <Contact />}
       <Footer />
     </main>
   );

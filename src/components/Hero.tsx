@@ -97,12 +97,14 @@ export default function Hero() {
               />
             </svg>
           </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300"
-          >
-            {t("getInTouch")}
-          </a>
+          {isAvailableForHire && (
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300"
+            >
+              {t("getInTouch")}
+            </a>
+          )}
         </div>
       </div>
 

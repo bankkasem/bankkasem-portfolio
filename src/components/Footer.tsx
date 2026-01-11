@@ -2,6 +2,8 @@ import { useTranslations } from "next-intl";
 
 const githubUrl = process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com";
 const email = process.env.NEXT_PUBLIC_EMAIL || "contact@example.com";
+const isAvailableForHire =
+  process.env.NEXT_PUBLIC_AVAILABLE_FOR_HIRE === "true";
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -44,25 +46,29 @@ export default function Footer() {
                   {t("projects") || "Projects"}
                 </a>
               </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="hover:text-white transition-colors"
-                >
-                  {t("contact") || "Contact"}
-                </a>
-              </li>
+              {isAvailableForHire && (
+                <li>
+                  <a
+                    href="#contact"
+                    className="hover:text-white transition-colors"
+                  >
+                    {t("contact") || "Contact"}
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
 
           {/* Contact */}
-          <div>
-            <h4 className="font-semibold mb-4">{t("contact")}</h4>
-            <ul className="space-y-2 text-white/70 text-sm">
-              <li>{email}</li>
-              <li>{t("locationValue")}</li>
-            </ul>
-          </div>
+          {isAvailableForHire && (
+            <div>
+              <h4 className="font-semibold mb-4">{t("contact")}</h4>
+              <ul className="space-y-2 text-white/70 text-sm">
+                <li>{email}</li>
+                <li>{t("locationValue")}</li>
+              </ul>
+            </div>
+          )}
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
